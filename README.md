@@ -12,7 +12,7 @@ Before diving into the code, a special mention for those keen on deepening their
 
 🔔 If you're not part of our community yet, consider hitting that star button! Stay tuned for weekly releases of engaging content where we explore, learn, and code together.
 
-👨‍💻 I'm Alibou, excited to guide you through today's exploration. Let's embark on this coding adventure together, building a one-on-one chat application, uncovering WebSockets intricacies, and mastering the art of data persistence in MongoDB.
+👨‍💻 I'm LK, excited to guide you through today's exploration. Let's embark on this coding adventure together, building a one-on-one chat application, uncovering WebSockets intricacies, and mastering the art of data persistence in MongoDB.
 
 ---
 
