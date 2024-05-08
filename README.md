@@ -1,10 +1,10 @@
 # Project Name
 
-One On One Chat application | Spring boot & WebSocket | By Alibou
+One On One Chat application | Spring boot & WebSocket | By Lk
 
 ## Overview
 
-Explore the world of **WebSockets** with **Alibou**, your experienced software engineer guide. If you missed our previous session delving into the magic of WebSockets and creating a lively group chat application, catch up [here](https://www.youtube.com/watch?v=7T-HnTE6v64&ab_channel=BoualiAli).
+Explore the world of **WebSockets** with **Lk**, your experienced software engineer guide. If you missed our previous session delving into the magic of WebSockets and creating a lively group chat application, catch up [here](https://www.youtube.com/watch?v=7T-HnTE6v64&ab_channel=BoualiAli).
 
 Today's focus is on real-time communication, as we build a **one-on-one chat application** that ensures private, secure conversations. Taking it a step further, we'll persist these chats in a **MongoDB database**.
 
@@ -52,7 +52,7 @@ Provide step-by-step instructions on how to install and set up your project loca
 
 ```bash
 # Clone the repository
-git clone https://github.com/ali-bouali/one-to-one-chat-spring-boot-web-socket
+git clone https://github.com/180701127/CHAT_APPLICATION_USING_JAVA_SPRINGBOOT_FRAMEWORK_WITH_MONGODB_COMPASS
 
 # Change into the project directory
 cd your-project
