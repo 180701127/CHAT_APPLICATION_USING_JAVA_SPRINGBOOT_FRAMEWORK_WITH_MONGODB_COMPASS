@@ -1,0 +1,68 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+    <link rel="stylesheet" th:href="@{/css/Background.css}">
+    <link rel="icon" type="image/x-icon" th:href="@{/assets/message.png}">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+
+<body>
+    <audio id="sound1" th:src="@{/mp3/242984911-phone-notification-new-message.wav}" preload="auto"></audio>
+    <audio id="sound2" th:src="@{/mp3/048761577-message-sent-alert-mail-chat-s.m4a}" preload="auto"></audio>
+    <audio id="sound3" th:src="@{/mp3/discord-leave.mp3}" preload="auto"></audio>
+
+    <h2 class="h">One to One Chat | springboot & Websocket | By LK</h2>
+
+    <div class="user-form" id="username-page">
+        <h2 class="j">Enter ChatRoom.</h2>
+        <form id="usernameForm" th:action="@{/enterChatRoom}" method="post">
+            <label for="nickname">Nickname:</label>
+            <input type="text" id="nickname" name="nickname" required>
+
+            <label for="fullname">Real Name:</label>
+            <input type="text" id="fullname" name="realname" required>
+
+            <button type="submit" onclick="document.getElementById('sound2').play()">Enter ChatRoom</button>
+        </form>
+    </div>
+
+    <div class="chat-container hidden" id="chat-page">
+        <div class="users-list">
+            <div class="users-list-container">
+                <h2>Online Users</h2>
+                <ul id="connectedUsers">
+
+                </ul>
+            </div>
+            <div>
+                <p th:id="connected-user-fullname"></p>
+                <button class="btn btn-primary" th:href="@{/logout}" id="logout" onclick="document.getElementById('sound3').play()">Logout</button>
+            </div>
+        </div>
+        <div class="chat-area">
+            <div class="chat-area" id="chat-messages">
+            </div>
+
+            <form id="messageForm" name="messageForm" class="hidden">
+                <div class="message-input">
+                    <input autocomplete="off" type="text" id="message" placeholder="Type your message...">
+                </div>
+                <button class="btn btn-primary" onclick="document.getElementById('sound1').play()">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    
+    
+</body>
+</html>
