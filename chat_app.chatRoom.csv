@@ -1,0 +1,3 @@
+_id,chatId,senderId,recipientId,_class
+663f97c096aa455e873535e9,girish_john,girish,john,com.example.chat_application.chatroom.ChatRoom
+663f97c096aa455e873535ea,girish_john,john,girish,com.example.chat_application.chatroom.ChatRoom

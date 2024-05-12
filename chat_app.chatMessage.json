@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "663f97c096aa455e873535eb"
+  },
+  "chatId": "girish_john",
+  "senderId": "girish",
+  "recipientId": "john",
+  "content": "Hai",
+  "timestamp": {
+    "$date": "2024-05-11T16:07:28.329Z"
+  },
+  "_class": "com.example.chat_application.chat.ChatMessage"
+},
+{
+  "_id": {
+    "$oid": "663f97cc96aa455e873535ec"
+  },
+  "chatId": "girish_john",
+  "senderId": "john",
+  "recipientId": "girish",
+  "content": "Hello",
+  "timestamp": {
+    "$date": "2024-05-11T16:07:40.461Z"
+  },
+  "_class": "com.example.chat_application.chat.ChatMessage"
+}]

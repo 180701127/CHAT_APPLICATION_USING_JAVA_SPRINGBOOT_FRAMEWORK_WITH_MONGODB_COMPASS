@@ -1,0 +1,3 @@
+_id,fullName,status,_class
+girish,logeshkumar,OFFLINE,com.example.chat_application.user.User
+john,johnkumar,OFFLINE,com.example.chat_application.user.User

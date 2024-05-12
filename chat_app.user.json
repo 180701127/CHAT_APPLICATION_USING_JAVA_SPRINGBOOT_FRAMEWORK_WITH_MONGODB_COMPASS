@@ -1,0 +1,12 @@
+[{
+  "_id": "girish",
+  "fullName": "logeshkumar",
+  "status": "OFFLINE",
+  "_class": "com.example.chat_application.user.User"
+},
+{
+  "_id": "john",
+  "fullName": "johnkumar",
+  "status": "OFFLINE",
+  "_class": "com.example.chat_application.user.User"
+}]
