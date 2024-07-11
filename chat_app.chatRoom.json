@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "663f97c096aa455e873535e9"
+  },
+  "chatId": "girish_john",
+  "senderId": "girish",
+  "recipientId": "john",
+  "_class": "com.example.chat_application.chatroom.ChatRoom"
+},
+{
+  "_id": {
+    "$oid": "663f97c096aa455e873535ea"
+  },
+  "chatId": "girish_john",
+  "senderId": "john",
+  "recipientId": "girish",
+  "_class": "com.example.chat_application.chatroom.ChatRoom"
+}]

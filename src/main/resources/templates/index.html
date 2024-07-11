@@ -29,6 +29,9 @@
 
             <button type="submit" onclick="document.getElementById('sound2').play()">Enter ChatRoom</button>
         </form>
+        <div th:if="${message}">
+            <p th:text="${message}"></p>
+        </div>
     </div>
 
     <div class="chat-container hidden" id="chat-page">

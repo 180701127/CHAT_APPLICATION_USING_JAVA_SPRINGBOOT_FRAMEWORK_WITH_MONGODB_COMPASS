@@ -18,6 +18,11 @@ public class ChatController {
 
     private final SimpMessagingTemplate messagingTemplate;
     private final ChatMessageService chatMessageService;
+    
+    @GetMapping("/")
+    public String index() {
+        return "index";
+    }
 
     @MessageMapping("/chat")
     public void processMessage(@Payload ChatMessage chatMessage) {
